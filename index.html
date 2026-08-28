@@ -1,1 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Hearts N Hands</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #e94f87;
+    }
+
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #222;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #e94f87;
+    }
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 8%;
+      background:
+        linear-gradient(rgba(255,255,255,.72), rgba(255,255,255,.72)),
+        linear-gradient(135deg, #ffe2ed, #ffffff, #f9d3e1);
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      color: #e94f87;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 750px;
+      margin: 0 auto 30px;
+      color: #555;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background: #e94f87;
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: #222;
+      color: #fff;
+    }
+
+    section {
+      padding: 85px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      max-width: 700px;
+      margin: auto;
+      color: #666;
+    }
+
+    .about {
+      background: #fff7fa;
+    }
+
+    .about-content {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.08rem;
+    }
+
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.05);
+    }
+
+    .card h3 {
+      color: #e94f87;
+      margin-bottom: 10px;
+    }
+
+    .impact {
+      background: #222;
+      color: #fff;
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .impact-number {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #ff85ad;
+    }
+
+    .feature {
+      background: linear-gradient(135deg, #e94f87, #f9aac4);
+      color: white;
+      text-align: center;
+    }
+
+    .feature h2 {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 45px 8%;
+      text-align: center;
+    }
+
+    footer p {
+      opacity: .8;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">Open Hearts N Hands</div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#toy-drive">Toy Drive</a>
+    <a href="#volunteer">Volunteer</a>
+    <a href="#donate">Donate</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Open Hearts N Hands</div>
+
+    <h1>Opening Hearts.<br>Extending Hands.<br>Changing Lives.</h1>
+
+    <p>
+      Supporting children, adults, individuals with disabilities,
+      and families in need through meaningful resources,
+      community programs, outreach and compassion.
+    </p>
+
+    <div class="buttons">
+      <a href="#help" class="btn btn-primary">Get Help</a>
+      <a href="#volunteer" class="btn btn-secondary">Volunteer</a>
+      <a href="#donate" class="btn btn-primary">Donate</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-title">
+    <h2>Who We Are</h2>
+    <p>Serving our community with compassion, dignity and purpose.</p>
+  </div>
+
+  <div class="about-content">
+    <p>
+      Open Hearts N Hands is a nonprofit organization committed to
+      strengthening families and improving lives throughout our community.
+      We connect individuals and families with resources, provide seasonal
+      assistance, create meaningful community experiences and work to ensure
+      that those facing difficult circumstances know they are not alone.
+    </p>
+  </div>
+</section>
+
+<section id="programs">
+  <div class="section-title">
+    <h2>Our Programs</h2>
+    <p>
+      Our programs are designed to meet practical needs while creating
+      opportunities for families and individuals to thrive.
+    </p>
+  </div>
+
+  <div class="program-grid">
+    <div class="card">
+      <h3>Holiday Toy Drive</h3>
+      <p>
+        Providing toys and holiday support to children and families
+        throughout the community.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Back-to-School Assistance</h3>
+      <p>
+        Helping students begin the school year prepared with backpacks,
+        supplies and other necessities.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Food & Essential Needs</h3>
+      <p>
+        Connecting families with food, toiletries and other everyday
+        essentials during times of need.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Clothing Assistance</h3>
+      <p>
+        Providing access to clothing and seasonal essentials for
+        individuals and families.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Community Events</h3>
+      <p>
+        Creating welcoming events that bring families together and
+        strengthen community connections.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Family & Disability Support</h3>
+      <p>
+        Supporting children and adults with mental and physical
+        disabilities and the families who care for them.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="impact">
+  <div class="section-title">
+    <h2>Our Community Impact</h2>
+    <p>Every act of kindness helps create lasting change.</p>
+  </div>
+
+  <div class="impact-grid">
+    <div>
+      <div class="impact-number">400+</div>
+      <p>Families Served Through Holiday Outreach</p>
+    </div>
+
+    <div>
+      <div class="impact-number">100+</div>
+      <p>Backpacks Distributed</p>
+    </div>
+
+    <div>
+      <div class="impact-number">Year-Round</div>
+      <p>Community Support & Outreach</p>
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="toy-drive">
+  <h2>2026 Holiday Toy Drive</h2>
+
+  <p>
+    Helping make the holidays brighter for children and families
+    throughout our community.
+  </p>
+
+  <br>
+
+  <a href="#" class="btn btn-secondary">Registration Coming Soon</a>
+</section>
+
+<section id="volunteer">
+  <div class="section-title">
+    <h2>Give Your Time. Make an Impact.</h2>
+    <p>
+      Volunteers help make every Open Hearts N Hands program possible.
+    </p>
+  </div>
+
+  <div style="text-align:center;">
+    <a href="#" class="btn btn-primary">Become a Volunteer</a>
+  </div>
+</section>
+
+<section id="donate" class="about">
+  <div class="section-title">
+    <h2>Help Us Continue the Work</h2>
+    <p>
+      Your support helps us provide resources, programs and assistance
+      to families throughout our community.
+    </p>
+  </div>
+
+  <div style="text-align:center;">
+    <a href="#" class="btn btn-primary">Donate to Open Hearts N Hands</a>
+  </div>
+</section>
+
+<footer>
+  <h3>Open Hearts N Hands</h3>
+  <p>Serving Fort Worth and surrounding communities.</p>
+  <p>© 2026 Open Hearts N Hands. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
